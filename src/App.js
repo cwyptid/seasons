@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { animalsounds } from "./data1.js";
+import { musicsounds } from "./data2.js";
+import { cartoonsounds } from "./data3.js";
+import { SoundBoard } from "./soundBoard.js";
 
 function App() {
+  const play = (id) => {
+    const audio = document.getElementById(id);
+    console.log(audio);
+    audio.play();
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <SoundBoard
+      animalsounds={animalsounds}
+      musicsounds={musicsounds}
+      cartoonsounds={cartoonsounds}
+      play={play}
+    />
   );
 }
 
