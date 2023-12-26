@@ -129,11 +129,30 @@ footer {
 	color: #606e5a;
 	border-top: 2px solid #606e5a;
 }
+@media screen and (max-width: 600px) {
+	.intro {
+		padding-left: 1em;
+		padding-right: 1em;
+		font-size: 1.1em;
+	}
 
-@media screen and (max-width: 950px) {
+	header {
+		font-size: 1.8em;
+	}
 	.nav-tabs,
 	.nav-tabs:hover {
-		font-size: 1.8em;
+		font-size: 0.8em;
+		text-decoration: none !important;
+	}
+}
+
+@media screen and (max-width: 960px) {
+	.nav-tabs,
+	.nav-tabs:hover {
+		font-size: 1.3em;
+	}
+	header {
+		font-size: 2em;
 	}
 
 	.soundtile {
