@@ -12,14 +12,6 @@ const SoundBoard = ({
 	return (
 		<>
 			<header>Sounds of the Seasons</header>
-			<div className="pwrapper">
-				<p className="intro">
-					we spend all summer waiting for winter, and all winter waiting for
-					summer.
-					<br />
-					why not enjoy the present?
-				</p>
-			</div>
 			<Tabs defaultActiveKey="genre-1" id="tabs" className="tabcss" justify>
 				<Tab eventKey="genre-1" title="Spring">
 					{animalsounds.map((sound) => (
